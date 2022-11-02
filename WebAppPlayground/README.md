@@ -16,5 +16,6 @@ I started this project because I wanted to be lazy and have a script setup that 
 2. add the following command to that file (at the bottom)  
    ```alias wap='cd /path/to/ && ./wap-deb.sh' ```
 3. Exit the command line and restart it. 
-4. Type in `wap`
-As of this point you should have access to the tool through a single command. 
+4. Type in `wap`  
+As of this point you should have access to the tool through a single command.  
+**wE WILL BE UPDATING THIS TO MAKE AN ALIAS AS PART OF THE INSTALL.**
