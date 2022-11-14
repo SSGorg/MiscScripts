@@ -26,7 +26,7 @@ CHOICE=$(dialog --clear \
 
 clear
 case $CHOICE in
-        1) 
+        1)
             echo "Starting Juice Shop"
             sudo systemctl start docker
             sudo docker run --name juiceshop -d -p 3000:3000 bkimminich/juice-shop
@@ -40,10 +40,10 @@ case $CHOICE in
             sudo docker rm juiceshop
             echo "Listing containers"
             sudo docker container ls
-            echo "Stopping docker"
+            echo "Stopping Docker"
             sudo systemctl stop docker
             ;;
-        3) 
+        3)
             echo "Starting DVWA"
             sudo systemctl start docker
             sudo docker run --name dvwa -d -p 80:80 vulnerables/web-dvwa
@@ -63,7 +63,7 @@ case $CHOICE in
             ;;
         5)
             echo "Installing Juice Shop (Docker)"
-            sudo apt update && sudo apt  upgrade 
+            sudo apt update && sudo apt upgrade
             sudo apt install docker
             sudo docker pull bkimminich/juice-shop
             echo "OWASP Juice Shop Installed."
