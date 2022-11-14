@@ -8,7 +8,8 @@ BACKTITLE="Alex's Web App Playground"
 TITLE="Alex's Web App Playground"
 MENU="Choose one of the following options:"
 
-OPTIONS=(1 "Start Juice Shop"
+OPTIONS=(
+         1 "Start Juice Shop"
          2 "Stop Juice Shop"
          3 "Start DVWA"
          4 "Stop DVWA"
