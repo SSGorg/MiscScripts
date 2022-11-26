@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 #Just a basic menu to install / run juice shop on arch linux systems
 HEIGHT=15
@@ -32,6 +32,7 @@ case $CHOICE in
             sudo docker run --name juiceshop -d -p 3000:3000 bkimminich/juice-shop
             sudo docker container ls
             echo "Go to: http://localhost:3000 to access the juice shop"
+            cd ~/
             ;;
         2)
             echo "Stopping Juice Shop"
@@ -42,6 +43,7 @@ case $CHOICE in
             sudo docker container ls
             echo "Stopping Docker"
             sudo systemctl stop docker
+            cd ~/
             ;;
         3)
             echo "Starting DVWA"
@@ -50,6 +52,7 @@ case $CHOICE in
             sudo docker container ls
             echo "Go to: http://localhost:80 to access DVWA"
             echo "Username: Admin | Password: password"
+            cd ~/
             ;;
         4)
             echo "Stopping DVWA"
@@ -60,6 +63,7 @@ case $CHOICE in
             sudo docker container ls
             echo "Stopping Docker"
             sudo systemctl stop docker
+            cd ~/
             ;;
         5)
             echo "Installing Juice Shop (Docker)"
