@@ -1,6 +1,6 @@
 #/bin/bash
 
-#Just a basic menu to install / run juice shop on arch linux systems
+#Just a basic menu to install / run juice shop on debian linux systems
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
